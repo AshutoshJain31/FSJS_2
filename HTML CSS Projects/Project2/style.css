@@ -1,0 +1,97 @@
+/* You can not modify anything in the HTML */
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    margin: -3px;
+    align-items:center;
+    width: 1529px;
+}
+img{
+    height: 40px;
+    width: 100px;
+    margin: 15px 80px;
+    border-right: 2px solid white;
+    padding-right: 40px;
+    
+}
+.list{
+    display:flex;
+    justify-content:flex-start;
+    color: white;
+    gap: 50px;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-family:Arial, Helvetica, sans-serif;  
+}
+.list-item:first-child::after{
+    content: ' \02C5';
+    font-weight: bold;
+}
+.list-item{
+    list-style-type: none;  
+}
+
+.list-item:hover{
+    background-color: white;
+    color: black;
+    
+}
+/* Button Style */
+.navbar:last-child{
+    padding-right: 10px;
+}
+.button-small{
+    margin-left: 450px;
+    border-radius: 6px;
+    background-color: rgb(221, 31, 193);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 8px  solid rgb(221, 31, 193);
+    
+}
+/* background image */
+body{
+    margin: 0px;
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:fit-content;
+    height: fit-content;
+}
+/* Heading Style */
+.hero-heading{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    inline-size: 900px;
+    margin: 150px 300px; 
+    font-family:Arial, Helvetica, sans-serif;  
+}
+.hero-description{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    inline-size: 900px;
+    margin: -140px 300px;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+/* Large Button Style */
+.button-large{
+    border-radius: 8px;
+    background-color: rgb(221, 31, 193);
+    color: white;
+    
+    font-weight: bold;
+    border: 8px  solid rgb(221, 31, 193);
+    margin: 190px 640px;
+    
+}
+.hero button{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+/* You can only modify the CSS file */
