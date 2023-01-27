@@ -1,0 +1,85 @@
+/* You can not modify anything in the HTML */
+/* Navigation BAR */
+.navbar-container
+    {
+        display: flex;
+        justify-content:flex-start;
+        
+    }
+    /* List Style */
+    .list{
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+        color:darkgray;
+        font-size: 15px;
+    }
+    .list-item{
+        list-style-type: none;
+    }
+   .list-item:hover{
+    
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+   }
+   /* Button Style */
+    .button-group{
+    position:absolute;
+    right: 0;
+    margin: 17px 10px; 
+   }
+   .nav-button{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: -8px;
+    background-color:#621cd0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border:none;
+    }
+    .nav-button:hover{
+        background-color:white;
+        color: #621cd0;
+        border: #621cd0 solid;
+    }
+/* Image Positioning */
+.banner-container {
+    display: flex;
+    align-items: flex-start;
+}
+ .banner-container  img{
+    text-align: right;
+    position: absolute;
+    left: 641px;
+}
+/* Heading style */
+.heading-text{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    inline-size: 400px;
+    margin: 200px 150px;
+}
+h1{
+    color: #260a54;
+}
+span{
+    color:#9B9CE5;
+}
+/* Pragraph style */
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    inline-size: 350px;
+    margin: -180px 150px;
+    color:darkgray;
+}
+.btn{
+    margin: 250px 150px;
+    padding: 20px 30px;
+    font-size: 15px;
+}
+
+
+/* You can only modify the CSS file */
