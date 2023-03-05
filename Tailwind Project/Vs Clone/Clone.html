@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body clss="box-border">
+    <main >
+    <!-- NAVigation BAR -->
+        <div class="flex items-start gap-x-12 bg-zinc-800 text-white justify-center sticky top-0">
+            <div class="flex items-start flex items-center mt-1">
+                <img class="w-7 m-1 " src="./Assets/Vs logo.png" alt="Logo">
+                <h5 class="text-center font-bold">Visual Studio Code</h5>
+            </div>
+            <ul class="flex justify-center gap-x-10 mt-10px mt-3">
+                <li >Docs</li>
+                <li>Updates</li>
+                <li>Blogs</li>
+                <li>API</li>
+                <li>Extension</li>
+                <li>FAQ</li>
+                <li>Learn</li>
+            </ul>
+            <input type="text" class="bg-zinc-700 h-[50px] border-white border hover:bg-zinc-600 text-center " placeholder="Search Docs">
+            <button class="h-[50px] bg-blue-800 px-[30px] ml-[-48px] ">Download</button>
+        </div>
+        <!-- header -->
+        <h3 class="bg-zinc-900 text-white text-center py-[6px]"> This website was created for educational purpose</h3>
+        <!-- Banner -->
+        <div class="flex items-center bg-zinc-800 h-[659px]">
+            <div class=" w-[50%] text-white flex flex-col align-text-top mt-[-200px] ml-[200px]" >
+                <div class="text-[50px] text-center  truncate"> 
+                    <h1>Code editing.</h1>
+                    <h1 class="font-medium">Redefined.</h1>
+                </div>
+                <p class="text-center relative my-[10px] ">Free. Built on open source. Runs everywhere.</p>
+                <div class="text-white text-center">
+                    <div class=" text-center flex justify-items-center p-[10px]">
+                        <div class="h-[70px] bg-blue-800 ml-[80px] border-r-2 border-zinc-800 px-[15px] py-[10px]">   <!--Q While adding padding h6 content go out of the box -->
+                            <button class="text-xl">Download For Windows  <h6 class="text-sm ">Stable Build</h6></button>
+                           
+                        </div>
+                        <button class="h-[70px] bg-blue-800 p-[10px] font-bold">\/</button>
+                    </div>  
+                    <p class="text-center text-[13px] text-neutral-500">By using VS Code, you agree to its</p>
+                    <a class="text-blue-800 text-[12px]"href="https://code.visualstudio.com/#home-terms">license and privacy statement.</a>
+                </div>
+            </div>
+            <img class="h-[500px] m-[50px] " src="./Assets/Banner_SS.png" alt="Banner Image">
+        </div>
+        <!-- Run and BUG window -->
+        <div class="flex justify-around mx-[200px]">
+            <div>
+                <img class="w-12 m-[20px]"src="./Assets/Bulb.png" alt="Bulb">
+                <h5 class="text-center">IntelliSense</h5>
+            </div>
+           <div>
+                <img class="w-14 m-[20px] ml-[20px] mb-[35px]"src="./Assets/BUG.png" alt="Run and debug">
+                <h5 class="text-center align-bottom">Run and Debug</h5>
+           </div>
+           <div>
+                <img class="w-14 m-[20px]"src="./Assets/Build and GIT.png" alt="Buid and Git">
+                <h5 class="text-center ">Built-in Git</h5>
+           </div>
+           <div>
+            <img class="w-14 m-[20px] mb-[35px]"src="./Assets/Extension.png" alt="Extension">
+            <h5 class="text-center">Extension</h5>
+           </div>
+        </div>
+        <!-- Meet IntelliSense.--Banner -->
+        <div class="py-[40px]">
+            <div class="flex items-center mx-[200px]">
+                <img class="w-96 m-[20px] w-[50%]"src="./Assets/1st_banner.png" alt="Meet IntelliSense.--Banner">
+                <div class="w-[50%] ml-[80px]">
+                    <h1 class="text-[30px] text-zinc-700 font-thin mb-[45px]">Meet IntelliSense.</h1>
+                    <p class="text-[20px] text-zinc-700">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+                </div>
+            </div>
+        </div>
+        <!-- debugging banner -->
+        <div class="bg-[#F5F5F5] py-[40px]">
+            <div class="flex items-center mx-[200px]">
+                <div class="w-[60%] ml-[80px]">
+                    <h1 class="text-[30px] text-zinc-700 font-thin mb-[45px] ">Print statement debugging is a thing of the past.</h1>
+                    <p class="text-[20px] text-zinc-700">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>    <!-- Q how to adjust the text -->
+                </div>
+                <img class="w-96 m-[20px] w-[50%]" src="./Assets/2nd_Banner.png" alt="debugging banner">
+            </div>
+        </div>
+        <!-- GIT Command--Banner -->
+        <div class="py-[40px]">
+            <div class="flex items-center mx-[200px]">
+                <img class="w-96 m-[20px] w-[50%]" src="./Assets/GIT_Banner.png" alt="GIT Banner">
+                <div class="w-[50%] ml-[80px]">
+                    <h1 class="text-[30px] text-zinc-700 font-thin mb-[45px]">Git commands built-in.</h1>
+                    <p class="text-[20px] text-zinc-700 w-[87%]">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Extensible and custemizer banner -->
+        <div class="bg-[#F5F5F5] py-[40px]">
+            <div class="flex items-center mx-[200px]">
+                <div class="w-[50%] ml-[80px] mr-[90px]">
+                    <h1 class="text-[30px] text-zinc-700 font-thin mb-[45px] ">Extensible and customizable.</h1>
+                    <p class="text-[20px] text-zinc-700">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. Learn more about extensions.</p>    <!-- Q how to adjust the text -->
+                </div>
+                <img class="w-72 m-[20px] w-[50%]" src="./Assets/Extension_Banner.png"alt="Extensible and custemizer banner">
+            </div>
+        </div>
+        <!-- Deploy and Confidence--Banner -->
+        <div class="py-[40px]">
+            <div class="flex items-center mx-[200px]">
+                <img class="w-96 m-[20px] w-[50%]"src="./Assets/Last_banner.png"alt="Deploy and Confidence.--Banner">
+                <div class="w-[50%] ml-[80px]">
+                    <h1 class="text-[30px] text-zinc-700 font-thin mb-[45px]">Deploy with confidence and ease</h1>
+                    <p class="text-[20px] text-zinc-700">With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, all from within VS Code.</p>
+                </div>
+            </div>
+        </div>
+        <!-- VS code for Banner -->
+        <div class="bg-[#F5F5F5] py-[40px]">
+            <marquee behavior="scroll" direction="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium debitis nisi iste asperiores placeat suscipit id officiis sequi. Assumenda laborum maxime odit consequuntur aspernatur veritatis enim amet dolore quod?</marquee>
+            <div class="mx-[200px]" >
+                <p class="text-[30px] text-zinc-700 font-thin mb-[25px] text-center">Vs Code for</p>
+                <div class="grid grid-cols-6 mx-[100px]">
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/javascript.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">JavaScript</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/python.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">Python</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/java.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">Java</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/markdown.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">Markdown</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/typescript.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">TypeScript</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/csharp.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">C/C++</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/powershell.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">JSON</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/powershell.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">Powershell</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/html.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">HTML/CSS</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/csharp.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">C#</p>
+                    </div>
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/php.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">PHP</p>
+                    </div> 
+                    <div class="flex justify-items-center p-[10px]">
+                        <img class="w-[30px]"src="./Assets/yaml.svg" alt="JavaScript">
+                        <p class="font-normal text-lg text-zinc-700">YAML</p>
+                    </div>
+                </div>
+                <!-- Link for More language -->
+                <div class="text-center my-[10px] text-blue-600 text-lg">
+                    <a href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs">and many more languages on the Marketplace...</a>
+                </div>
+                <!-- Link for Button -->
+                <div class="text-center mt-[15px]">
+                    <button class="h-[50px] w-[200px] bg-blue-800 text-gray-50 font-semibold text-lg">Get Started Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Window /MAC/Linux Banner -->
+        <div class="flex items-center px-[300px]">
+            <!-- Windows -->
+            <div class="py-[50px]">  
+                <img class="w-[100px]  mx-[110px] "src="./Assets/windows-logo.png" alt="Windows Logo">
+                    
+                    <button class="flex bg-blue-800 items-center m-[50px] px-[50px] pb-[30px] pt-[10px]"><img class="w-[30px] h-[20px] m-[10px]" src="./Assets/download.svg" alt="Download"/>  
+                         <span class="text-white text-lg block">Windows</span>
+                         <small class="text-white absolute mt-[55px] ml-[25px]">Windows 8,10,11</small>
+                    </button>                  
+                <table class="ml-[45px]">
+                    <tbody >
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">User Installer</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">System Installer</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">.Zip</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">CLI</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Linux -->
+            <div class="">
+                <div class="py-[10px]">
+                <img class="w-[100px] mx-[120px] mt-[20px] align-baseline" src="./Assets/linux-logo.png" alt="Linux Logo">
+                <div class="flex items-center pb-[60px] pt-[45px]"> 
+                    <button class="flex bg-blue-800 items-center my-[10px] px-[50px] pb-[30px] pt-[10px] mr-[5px]"><img class="w-[30px] h-[20px] m-[10px]" src="./Assets/download.svg" alt="Download"/>
+                        <span class="text-white text-lg block">.deb</span>
+                        <small class="text-white absolute mt-[55px] ml-[5px]">Debian,Ubuntu</small>
+                        </button>
+                        <button class="flex bg-blue-800 items-center my-[10px] px-[50px] pb-[30px] pt-[10px]"><img class="w-[30px] h-[20px] m-[10px] ml-[-10px]" src="./Assets/download.svg" alt="Download"/>
+                            <span class="text-white text-lg block">.rpm</span>
+                            <small class="text-white absolute mt-[55px] ml-[-30px]">Red Hat,Fedora,SUSE</small>
+                            </button>
+                </div>
+                <table class="ml-[45px] pt-[-   90px]">
+                    <tbody class="">
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center pr-[8px]">.deb</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">.rpm</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">.tar.gz</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">Snap</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2 col-span-2 "><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Snap Store</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-zinc-900 font-semibold text-center">CLI</td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x64</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">x86</a></td>
+                            <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Arm64</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    
+            </div>
+            <!-- MAC -->
+            <div class="py-[30px] mt-[-20px]">
+                <img class="w-[100px] mx-[120px] mb-[110px]" src="./Assets/apple-logo.svg" alt="Windows Logo">
+                <button class="flex bg-blue-800 items-center  px-[40px] pb-[30px] pt-[10px] mx-[70px] mb-[110px] mt-[-40px]"><img class="w-[30px] h-[20px] m-[10px] "    src="./Assets/download.svg" alt="Download"/>  
+                    <span class="text-white text-lg block">Mac</span>
+                    <small class="text-white absolute mt-[55px] ml-[10px]">macOS 10.11+</small>
+               </button>
+               <table class="ml-[45px]">
+                <tbody >
+                    <tr>
+                        <td class="text-zinc-900 font-semibold text-center">.Zip</td>
+                        <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Intel chip</a></td>
+                        <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Apple Silicon</a></td>
+                        <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Universal</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-zinc-900 font-semibold text-center">CLI</td>
+                        <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Intel chip</a></td>
+                        <td class="text-white bg-blue-800 rounded text-[12px] px-[5px] ml-[5px] border-2"><a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=tailwind+css">Apple silicon</a></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <!-- last Banner -->
+        <div class="bg-[#F5F5F5]">
+            <div class="mx-[200px] ">
+                 <div class="flex items-center ml-[100px]">
+                        <div class="p-[20px] mx-[40px] ">
+                             <h2 class="text-xl text-center pb-[30px]">Want new features sooner?</h2>
+                            <p class="text-center">Get the <a class="text-blue-600"href="https://code.visualstudio.com/insiders/"> Insiders build</a>  instead.</p>
+                         </div>
+                        <div class="p-[10px] mx-[100px]">
+                            <h2 class="text-[25px] text-center pb-[30px]">Use <a class="text-blue-600"href="https://vscode.dev/">vscode.dev</a>  for quick edits online!</h2>
+                            <p class="text-center">GitHub, Azure Repos, and local files.</p>
+                        </div>
+                        
+                </div>
+                <div class="mt-[50px]">
+                    <h5 class="text-slate-600 text-center font-semibold">LICENSE AND PRIVACY TERMS</h5>
+                    <P class="mx-[200px] py-[10px] text-center leading-9 text-[15px]">By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.</P>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <nav class="flex items-center gap-x-12 bg-zinc-800 text-white justify-center py-[20px]">
+            <div class="mr-[190px] flex gap-[15px]">
+                <h3>Hello from Seattle.</h3>
+                <h3>Follow @code</h3>
+            </div>
+            
+            <ul class="flex gap-[15px] ml-[400px]">
+                <li>Support</li>
+                <li>Privecy</li>
+                <li>Terms and Use</li>
+                <li>License</li>
+                
+            </ul>
+            <div>
+                <img class= w-[80px] src="./Assets/microsoft-logo.png" alt="Logo">
+                <h3>© 2022 Microsoft</h3>
+             </div>
+        </nav>
+   </main>
+</body>
+</html>
